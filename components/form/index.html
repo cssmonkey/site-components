@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Base Form Styles</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script type="text/javascript">
+            var htmlTag = document.getElementsByTagName("html")[0];
+
+            htmlTag.className = htmlTag.className.replace(/(^|\s)no-js(?!\S)/, '$1js');
+
+        </script>
+
+        <link rel="stylesheet" href="/build/css/styles.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="page">
+                <h1 class="page-title">Base Form Styles</h1>
+                <div class="richtext">
+                    <p>I need to add a description here.</p>
+                </div>
+                <hr />
+                <div class="form">
+        	        <form novalidate>
+                        <legend>Form Elements</legend>
+                        <div class="form-row">
+                            <label class="label" for="dropdown1">Dropdown</label>
+                            <div class="form-field">
+                                <div class="styled-select">
+                                    <select class="field" name="dropdown1" id="dropdown1">
+                                        <option>Option one</option>
+                                        <option>Option two</option>
+                                        <option>Option three</option>
+                                        <option>Option four</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label class="label" for="textfield1">Text field</label> 
+                            <div class="form-field">
+                                <input class="field" type="text" placeholder="Text field" name="textfield1" id="textfield1" /> 
+                                <span class="form-error">This is an error</span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label class="label" for="textfieldShort1">Short text field</label> 
+                            <div class="form-field">
+                                <input class="field field--short" type="text" placeholder="Text field" name="textfieldShort1" id="textfieldShort1" /> 
+                            </div>
+                        </div>
+
+                        <div class="form-row form-row--multiple-fields">
+                            <h3 class="multiple-fields__title">Short text field mutliple</h3>
+                            <div class="form-field">
+                                <label class="label" for="textfieldShortMulti1">Label 1</label> 
+                                <input class="field field--short" type="text" placeholder="Text field" name="textfieldShortMulti1" id="textfieldShortMulti1" /> 
+                            </div>
+                            <div class="form-field">
+                                <label class="label" for="textfieldShortMulti2">Label 2</label> 
+                                <input class="field field--short" type="text" placeholder="Text field" name="textfieldShortMulti2" id="textfieldShortMulti2" /> 
+                            </div>
+                            <div class="form-field">
+                                <label class="label" for="textfieldShortMulti3">Label 3</label> 
+                                <input class="field field--short" type="text" placeholder="Text field" name="textfieldShortMulti3" id="textfieldShortMulti3" /> 
+                            </div>
+                        </div>
+                        <div class="form-row form-row--datepicker">
+                            <label class="label" for="datepicker1">Datepicker</label> 
+                            <div class="form-field">
+                                <div class="datepicker-container">
+                                    <input class="field field--datepicker" placeholder="DD/MM/YYYY" type="text" name="datepicker1" id="datepicker1" /> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label class="label" for="numberfield1">Number field</label> 
+                            <div class="form-field">
+                                <input class="field" type="number" value="3" min="1" max="5" name="numberfield1" id="numberfield1" /> 
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label class="label" for="emailfield1">Email field</label> 
+                            <div class="form-field">
+                                <input class="field" data-hastooltip type="email" placeholder="name@email.com" name="emailfield1" id="emailfield1" /> 
+                                <div class="tooltip"><p>This is a tooltip</p></div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label class="label" for="textarea1">Multiline Text field</label> 
+                            <div class="form-field">
+                                <textarea class="field" name="textarea1" id="textarea1"></textarea> 
+                            </div>
+                        </div>
+                        <div class="richtext richtext--form">
+                            <h3>This is a title</h3>
+                            <p>This is some richtext within a form</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+             
+                        <div class="form-group">
+                            <div class="form-row">
+                                <label class="label" for="textfield2">Text field</label> 
+                                <div class="form-field">
+                                    <input class="field" type="text" placeholder="Text field" name="textfield2" id="textfield2" /> 
+                                </div>
+                            </div>
+                            <div class="form-row form-row--datepicker">
+                                <label class="label" for="datepicker2">Datepicker</label> 
+                                <div class="form-field">
+                                    <div class="datepicker-container">
+                                        <input placeholder="DD/MM/YYYY" class="field field--datepicker" data-hastooltip type="text" name="datepicker2" id="datepicker2" /> 
+                                    </div>
+                                    <div class="tooltip"><p>This is a tooltip</p></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <label class="label" for="numberfield2">Number field</label> 
+                                <div class="form-field">
+                                    <input class="field" type="number" min="1" max="5" name="numberfield2" id="numberfield2" /> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-submit">
+                            <input type="submit" value="Submit" class="btn btn--submit" />
+                        </div>
+                    </form>
+            	</div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="/assets/js/libs/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="/assets/js/libs/jquery.hammer.js"></script>
+        <script type="text/javascript" src="/assets/js/libs/jquery.imagesLoaded.js"></script>
+        <script type="text/javascript" src="/assets/js/libs/jquery.smartresize.js"></script>
+        <script type="text/javascript" src="/assets/js/libs/outline.js"></script>
+        <script type="text/javascript" src="/assets/js/helpers/helpers.js"></script>
+        <script type="text/javascript" src="/assets/js/modules/form.js"></script>
+        <script type="text/javascript" src="/assets/js/modules/jquery.stepper.js"></script>
+
+        <script type="text/javascript" src="/assets/js/app.js"></script>
+
+    </body>
+</html>

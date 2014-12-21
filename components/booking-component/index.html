@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script type="text/javascript">
+            var htmlTag = document.getElementsByTagName("html")[0];
+
+            htmlTag.className = htmlTag.className.replace(/(^|\s)no-js(?!\S)/, '$1js');
+
+        </script>
+
+        <link rel="stylesheet" href="/build/css/styles.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="page">
+                <h1 class="page-title">Booking Component</h1>
+                <div class="">
+                    <div class="form form--booking-form">
+            	        <form novalidate>
+                            <legend>Booking Component</legend>
+                            <div class="form-row">
+                                <label class="label" for="locationSelect">Select location</label>
+                                <div class="form-field">
+                                    <div class="styled-select">
+                                        <select class="field" name="locationSelect" id="locationSelect">
+                                            <option>Option one</option>
+                                            <option>Option two</option>
+                                            <option>Option three</option>
+                                            <option>Option four</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row form-row--datepicker">
+                                <label class="label" for="arrivalDate">Arrival Date</label> 
+                                <div class="form-field">
+                                    <div class="datepicker-container">
+                                        <input class="field field--datepicker" placeholder="DD/MM/YYYY" type="text" name="arrivalDate" id="arrivalDate" /> 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <label class="label" for="nightsSelect">How many nights?</label>
+                                <div class="form-field">
+                                    <input class="field" type="number" value="1" min="1" max="14" name="nightsSelect" id="nightsSelect" />
+                                </div>
+                            </div>
+                            <div class="rooms-select-panel">
+                                <div class="form-row">
+                                    <label class="label" for="roomsSelect">How many rooms?</label>
+                                    <div class="form-field">
+                                        <div class="styled-select">
+                                            <select class="field field--num-rooms" name="roomsSelect" id="roomsSelect">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10+</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row form-row--multiple-fields form-row--occupants-select">
+                                    <h3 class="multiple-fields__title">Room 1</h3>
+                                    <div class="form-field">
+                                        <label class="label" for="room1AdultsSelect">Adults</label> 
+                                        <p class="disclaimer">over 12 yrs</p>
+                                        <div class="styled-select">
+                                            <select class="field" name="room1AdultsSelect" id="room1AdultsSelect">
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-field">
+                                        <label class="label" for="room1ChildrenSelect">Children</label> 
+                                        <p class="disclaimer">3 to 12 yrs</p>
+                                        <div class="styled-select">
+                                            <select class="field" name="room1ChildrenSelect" id="room1ChildrenSelect">
+                                                <option>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-field">
+                                        <label class="label" for="room1AdultsSelect">Infants</label> 
+                                        <p class="disclaimer">under 3 yrs</p>
+                                        <div class="styled-select">
+                                            <select class="field" name="room1InfantsSelect" id="room1InfantsSelect">
+                                                <option>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row form-row--multiple-fields form-row--occupants-select form-row--occupants-select--additional">
+                                    <h3 class="multiple-fields__title">Room 2</h3>
+                                    <div class="form-field">
+                                        <label class="label" for="room2AdultsSelect">Adults</label> 
+                                        <p class="disclaimer">over 12 yrs</p>
+                                        <div class="styled-select">
+                                            <select class="field" name="room2AdultsSelect" id="room2AdultsSelect">
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-field">
+                                        <label class="label" for="room2ChildrenSelect">Children</label> 
+                                        <p class="disclaimer">3 to 12 yrs</p>
+                                        <div class="styled-select">
+                                            <select class="field" name="room2ChildrenSelect" id="room2ChildrenSelect">
+                                                <option>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-field">
+                                        <label class="label" for="room1InfantsSelect">Infants</label> 
+                                        <p class="disclaimer">under 3 yrs</p>
+                                        <div class="styled-select">
+                                            <select class="field" name="room1InfantsSelect" id="room1InfantsSelect">
+                                                <option>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row form-row--multiple-fields form-row--occupants-select form-row--occupants-select--additional">
+                                    <h3 class="multiple-fields__title">Room 3</h3>
+                                    <div class="form-field">
+                                        <label class="label" for="room3AdultsSelect">Adults</label> 
+                                        <p class="disclaimer">over 12 yrs</p>
+                                        <div class="styled-select">
+                                            <select class="field" name="room3AdultsSelect" id="room3AdultsSelect">
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-field">
+                                        <label class="label" for="room1ChildrenSelect">Children</label> 
+                                        <p class="disclaimer">3 to 12 yrs</p>
+                                        <div class="styled-select">
+                                            <select class="field" name="room3ChildrenSelect" id="room3ChildrenSelect">
+                                                <option>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-field">
+                                        <label class="label" for="room3InfantsSelect">Infants</label> 
+                                        <p class="disclaimer">under 3 yrs</p>
+                                        <div class="styled-select">
+                                            <select class="field" name="room3InfantsSelect" id="room3InfantsSelect">
+                                                <option>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row form-row--multiple-fields form-row--occupants-select form-row--occupants-select--additional">
+                                    <h3 class="multiple-fields__title">Room 4</h3>
+                                    <div class="form-field">
+                                        <label class="label" for="room4AdultsSelect">Adults</label> 
+                                        <p class="disclaimer">over 12 yrs</p>
+                                        <div class="styled-select">
+                                            <select class="field" name="room4AdultsSelect" id="room4AdultsSelect">
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-field">
+                                        <label class="label" for="room4ChildrenSelect">Children</label> 
+                                        <p class="disclaimer">3 to 12 yrs</p>
+                                        <div class="styled-select">
+                                            <select class="field" name="room4ChildrenSelect" id="room4ChildrenSelect">
+                                                <option>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-field">
+                                        <label class="label" for="room4InfantsSelect">Infants</label> 
+                                        <p class="disclaimer">under 3 yrs</p>
+                                        <div class="styled-select">
+                                            <select class="field" name="room4InfantsSelect" id="room4InfantsSelect">
+                                                <option>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row form-row--multiple-fields form-row--occupants-select form-row--occupants-select--additional">
+                                    <h3 class="multiple-fields__title">Room 5</h3>
+                                    <div class="form-field">
+                                        <label class="label" for="room5AdultsSelect">Adults</label> 
+                                        <p class="disclaimer">over 12 yrs</p>
+                                        <div class="styled-select">
+                                            <select class="field" name="room5AdultsSelect" id="room5AdultsSelect">
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-field">
+                                        <label class="label" for="room5ChildrenSelect">Children</label> 
+                                        <p class="disclaimer">3 to 12 yrs</p>
+                                        <div class="styled-select">
+                                            <select class="field" name="room5ChildrenSelect" id="room5ChildrenSelect">
+                                                <option>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-field">
+                                        <label class="label" for="room5InfantsSelect">Infants</label> 
+                                        <p class="disclaimer">under 3 yrs</p>
+                                        <div class="styled-select">
+                                            <select class="field" name="room5InfantsSelect" id="room5InfantsSelect">
+                                                <option>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row form-row--multiple-fields form-row--occupants-select form-row--occupants-select--additional">
+                                    <h3 class="multiple-fields__title">Room 6</h3>
+                                    <div class="form-field">
+                                        <label class="label" for="room6AdultsSelect">Adults</label> 
+                                        <p class="disclaimer">over 12 yrs</p>
+                                        <div class="styled-select">
+                                            <select class="field" name="room6AdultsSelect" id="room6AdultsSelect">
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-field">
+                                        <label class="label" for="room6ChildrenSelect">Children</label> 
+                                        <p class="disclaimer">3 to 12 yrs</p>
+                                        <div class="styled-select">
+                                            <select class="field" name="room6ChildrenSelect" id="room6ChildrenSelect">
+                                                <option>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-field">
+                                        <label class="label" for="room7InfantsSelect">Infants</label> 
+                                        <p class="disclaimer">under 3 yrs</p>
+                                        <div class="styled-select">
+                                            <select class="field" name="room7InfantsSelect" id="room7InfantsSelect">
+                                                <option>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row form-row--multiple-fields form-row--occupants-select form-row--occupants-select--additional">
+                                    <h3 class="multiple-fields__title">Room 7</h3>
+                                    <div class="form-field">
+                                        <label class="label" for="room7AdultsSelect">Adults</label> 
+                                        <p class="disclaimer">over 12 yrs</p>
+                                        <div class="styled-select">
+                                            <select class="field" name="room7AdultsSelect" id="room7AdultsSelect">
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-field">
+                                        <label class="label" for="room7ChildrenSelect">Children</label> 
+                                        <p class="disclaimer">3 to 12 yrs</p>
+                                        <div class="styled-select">
+                                            <select class="field" name="room7ChildrenSelect" id="room7ChildrenSelect">
+                                                <option>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-field">
+                                        <label class="label" for="room7InfantsSelect">Infants</label> 
+                                        <p class="disclaimer">under 3 yrs</p>
+                                        <div class="styled-select">
+                                            <select class="field" name="room7InfantsSelect" id="room7InfantsSelect">
+                                                <option>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row form-row--multiple-fields form-row--occupants-select form-row--occupants-select--additional">
+                                    <h3 class="multiple-fields__title">Room 8</h3>
+                                    <div class="form-field">
+                                        <label class="label" for="room8AdultsSelect">Adults</label> 
+                                        <p class="disclaimer">over 12 yrs</p>
+                                        <div class="styled-select">
+                                            <select class="field" name="room8AdultsSelect" id="room8AdultsSelect">
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-field">
+                                        <label class="label" for="room1ChildrenSelect">Children</label> 
+                                        <p class="disclaimer">3 to 12 yrs</p>
+                                        <div class="styled-select">
+                                            <select class="field" name="room8ChildrenSelect" id="room8ChildrenSelect">
+                                                <option>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-field">
+                                        <label class="label" for="room1InfantsSelect">Infants</label> 
+                                        <p class="disclaimer">under 3 yrs</p>
+                                        <div class="styled-select">
+                                            <select class="field" name="room8InfantsSelect" id="room8InfantsSelect">
+                                                <option>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row form-row--multiple-fields form-row--occupants-select form-row--occupants-select--additional">
+                                    <h3 class="multiple-fields__title">Room 9</h3>
+                                    <div class="form-field">
+                                        <label class="label" for="room1AdultsSelect">Adults</label> 
+                                        <p class="disclaimer">over 12 yrs</p>
+                                        <div class="styled-select">
+                                            <select class="field" name="room9AdultsSelect" id="room9AdultsSelect">
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-field">
+                                        <label class="label" for="room9ChildrenSelect">Children</label> 
+                                        <p class="disclaimer">3 to 12 yrs</p>
+                                        <div class="styled-select">
+                                            <select class="field" name="room9ChildrenSelect" id="room9ChildrenSelect">
+                                                <option>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-field">
+                                        <label class="label" for="room9InfantsSelect">Infants</label> 
+                                        <p class="disclaimer">under 3 yrs</p>
+                                        <div class="styled-select">
+                                            <select class="field" name="room9InfantsSelect" id="room9InfantsSelect">
+                                                <option>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <label class="label" for="promoCode">Promo code</label> 
+                                <div class="form-field">
+                                    <input class="field field--short" type="text" placeholder="Text field" name="promoCode" id="promoCode" /> 
+                                </div>
+                            </div>
+
+                            
+                            
+                            <div class="richtext richtext--form">
+                                <h3>This is a title</h3>
+                                <p>This is some richtext within a form</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                 
+                            <div class="form-group">
+                                <div class="form-row">
+                                    <label class="label" for="textfield2">Text field</label> 
+                                    <div class="form-field">
+                                        <input class="field" type="text" placeholder="Text field" name="textfield2" id="textfield2" /> 
+                                    </div>
+                                </div>
+                                <div class="form-row form-row--datepicker">
+                                    <label class="label" for="datepicker2">Datepicker</label> 
+                                    <div class="form-field">
+                                        <div class="datepicker-container">
+                                            <input placeholder="DD/MM/YYYY" class="field field--datepicker" data-hastooltip type="text" name="datepicker2" id="datepicker2" /> 
+                                        </div>
+                                        <div class="tooltip"><p>This is a tooltip</p></div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <label class="label" for="numberfield2">Number field</label> 
+                                    <div class="form-field">
+                                        <input class="field" type="number" min="1" max="5" name="numberfield2" id="numberfield2" /> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-submit">
+                                <input type="submit" value="Submit" class="btn btn--submit" />
+                            </div>
+                        </form>
+                	</div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="/assets/js/libs/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="/assets/js/libs/jquery.hammer.js"></script>
+        <script type="text/javascript" src="/assets/js/libs/jquery.imagesLoaded.js"></script>
+        <script type="text/javascript" src="/assets/js/libs/jquery.smartresize.js"></script>
+        <script type="text/javascript" src="/assets/js/libs/outline.js"></script>
+        <script type="text/javascript" src="/assets/js/helpers/helpers.js"></script>
+        <script type="text/javascript" src="/assets/js/modules/form.js"></script>
+        <script type="text/javascript" src="/assets/js/modules/jquery.stepper.js"></script>
+        <script type="text/javascript" src="/assets/js/modules/bookingForm.js"></script>
+
+        <script type="text/javascript" src="/assets/js/app.js"></script>
+
+    </body>
+</html>

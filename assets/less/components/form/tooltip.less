@@ -1,0 +1,75 @@
+.tooltip {
+	padding: 1em;
+	background: #E6E6E6;
+	position: relative;
+	display: block;
+
+	&:before {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		border-width: 8px;
+		border-style: solid;
+		border-color: transparent;
+		border-right-color: #E6E6E6;
+		margin-top: -8px;	
+		margin-left: -16px;
+	}
+
+	p {
+		.font-size(14);
+	}
+
+	.js & {
+		.hide-element();
+	
+		&.tooltip--active {
+			position: relative;
+			left: 0;
+		}
+	}
+
+	.form-group & {
+		background: #F6F6F6;
+
+		&:before {
+			border-right-color: #F6F6F6;
+		}
+	}
+}
+.tooltip-trigger {
+	margin: 0 1em;
+	.inline-block(middle);
+
+	span {
+		.hide-element();
+	}
+
+	.icon-help {
+		color: #555;
+		position: static;
+		.font-size(16);
+	}
+}
+
+.screen-569-up() {
+	.tooltip {
+		margin: 0 1em;
+		.inline-block();
+
+		&:before {
+			content: '';
+		}
+
+		.js & {
+			&.tooltip--active-focus {
+				position: relative;
+				left: 0;
+			}
+		}
+	}
+
+	.tooltip-trigger {
+		display: none;
+	}
+}

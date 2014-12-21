@@ -1,0 +1,66 @@
+.styled-select {
+	position: relative;
+	display: block;
+    select {
+        margin:0 0 0.4em;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+        cursor: pointer;
+        color: #000;
+        width: 100%;
+        padding: 0.5em 1.5em 0.5em 0.5em;	
+        .font-size(14);
+        .appearance-none();
+    }
+
+    &::after {
+        content: "\e8e1";
+        position: absolute;
+        speak: none;
+        font-family: icomoon;
+        color: #555;
+        top: 0.5em;
+        right: 0.5em;
+        pointer-events: none;
+        z-index: 2;
+        .font-size(18);
+    }
+
+    &::before {
+        display: none;
+    }
+}
+
+
+// RESET STYLES FOR BROWSER WHICH DON'T SUPPORT CUSTOM SELECT STYLES
+.basic-style-select {
+    select {
+        padding: 0.71428em;
+        border-radius: inherit;
+    }
+    &::before,
+    &::after {
+        display: none;
+    }
+}
+
+// less than or equal to IE 9 
+.ie9 .styled-select,
+.ie9 .booking-bar .select,
+.lt-ie9 .styled-select,
+.lt-ie9 .booking-bar .select {
+    .basic-style-select;
+}
+// FIREFOX
+@-moz-document url-prefix() {
+    .styled-select,
+    .booking-bar .select {
+        .basic-style-select;
+    }
+}
+
+.screen-569-up() {
+	.styled-select {
+		.inline-block(middle);
+	}
+}

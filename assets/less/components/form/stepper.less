@@ -1,0 +1,23 @@
+.form .stepper {
+	input {
+		margin: 0 0.25em 0 0;
+		width: auto;
+		min-width: none;
+		.inline-block(middle);
+	}
+	.stepper__controls {
+		.inline-block(middle);
+	}
+	.stepper-control {
+		margin: 0 0.25em;
+		.font-size(16);
+	}
+}
+
+.screen-569-up() {
+	.form .stepper {
+		input {
+			min-width: initial;
+		}
+	}
+}
