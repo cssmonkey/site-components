@@ -1,0 +1,182 @@
+.progress-bar {
+	text-align: center;
+	padding: 0;
+	margin: 1em auto;
+
+	.progress-bar__content {
+		position: relative;
+
+		&:before {
+			content: '';
+			width: 100%;
+			border-top: 8px solid #e6e6e6;
+			position: absolute;
+			top: 15px;
+			left: 0;
+			margin-top: -4px;
+		}
+	}
+
+	.progress {
+		width: 0;
+		border-top: 8px solid #6F6F6F;
+		position: absolute;
+		top: 15px;
+		left: 0;
+		margin-top: -4px;
+		display: none;
+		.transition(width, 0.5s);
+	}
+
+	.status-description {
+		.font-size(14);
+		margin: 0 0 1em;
+
+		span {
+			display: block;
+		}
+	}
+
+	.progress-bar__list {
+		margin: 0;
+        padding: 0;
+        display: table;
+        width: 100%;
+        counter-reset: li; /* Initiate a counter */
+	}
+	.progress-bar__list-item {
+		list-style: none;
+        padding: 0;
+        margin: 0;
+        display: table-cell;
+        vertical-align: top;
+        position: relative;
+        z-index: 1;
+        visibility: hidden;
+        &.progress-bar__list-item--current {
+        	&:before {
+        		content: '';
+        		border-top: 8px solid #e6e6e6;
+				position: absolute;
+				top: 15px;
+				right: 0;
+				margin-top: -4px;
+				width: 50%;
+        	}
+
+        	&:last-child {
+        		&:before {
+        			display: none;
+        		}
+        	}
+        }
+	}
+
+	// set list item widths dependent on count. Classes are applied with JS
+	&.progress-bar--items_1,
+	&.progress-bar--items_2,
+	&.progress-bar--items_3,
+	&.progress-bar--items_4,
+	&.progress-bar--items_5,
+	&.progress-bar--items_6,
+	&.progress-bar--items_7,
+	&.progress-bar--items_8 {
+		.progress-bar__list-item {
+            visibility: visible;
+        }
+	}
+    
+    .progress-bar__section-indicator {
+    	background: #6F6F6F;
+    	border-radius: 100%;
+    	width: 30px;
+    	height: 30px;
+    	display: block;
+    	margin: 0 auto;
+    	position: relative;
+    	&:after {
+    		content: counter(li);
+    		counter-increment: li; /* Increment the counter by 1 */
+    		color: #fff;
+    		line-height: 1.6em;
+    		.font-size(16);
+    		.inline-block(middle);
+    	}
+    	&:before {
+    		content: '';
+    		width: 0;
+    		height: 100%;
+    		.inline-block(middle);
+    	}
+    }
+	.progress-bar__section-name {
+		display: block;
+		padding: 0;
+		margin: 1em 0 0;
+		position: relative;
+		.font-size(14);
+
+		display: none;
+	}
+
+	.progress-bar__list-item--current .progress-bar__section-name {
+		display: block;
+	}
+}
+
+.screen-569-up() {
+	.progress-bar {
+		.progress {
+			display: block;
+		}
+
+		.status-description {
+			.hide-element(); // content for screenreaders only
+		}
+
+		&.progress-bar--items_1 { 
+	        .progress-bar__list-item {
+	            width: 100%;
+	        }
+	    }
+	    &.progress-bar--items_2 { 
+	        .progress-bar__list-item {
+	            width: 50%;
+	        }
+	    }
+	    &.progress-bar--items_3 { 
+	        .progress-bar__list-item {
+	            width: 33.33333%;
+	        }
+	    }
+	    &.progress-bar--items_4 { 
+	        .progress-bar__list-item {
+	            width: 25%;
+	        }
+	    }
+	    &.progress-bar--items_5 { 
+	        .progress-bar__list-item {
+	            width: 20%;
+	        }
+	    }
+	    &.progress-bar--items_6 { 
+	        .progress-bar__list-item {
+	            width: 16.66666%;
+	        }
+	    }
+	    &.progress-bar--items_7 { 
+	        .progress-bar__list-item {
+	            width: 14.2857%;
+	        }
+	    }
+	    &.progress-bar--items_8 { 
+	        .progress-bar__list-item {
+	            width: 12.5%;
+	        }
+	    }
+
+	    .progress-bar__section-name {
+	    	display: block;
+	    }
+	}
+}

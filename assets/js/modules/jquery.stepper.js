@@ -68,7 +68,7 @@
 					if(!isValid()) {
 						console.log('trigger error message');
 					}
-					else if (inValid) {
+					else if (isValid()) {
 						console.log('remove error message');
 						invalid = false;
 					}
