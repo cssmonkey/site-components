@@ -1,0 +1,141 @@
+.booking-details-component {
+	background: #e6e6e6;
+	padding: 1.5em 1em;
+	margin: 2em 0;
+
+	// temp style - DELETE ME
+	max-width: 400px;
+
+	.label {
+		display: block;
+		margin-bottom: 0.4em;
+	}
+}
+.booking-details__title {
+	padding: 0 0.6em 0.6em;
+	margin: 0 -0.55em 1em; 
+	border-bottom: 1px solid #ddd;
+	font-weight: bold;
+	.font-size(18);
+}
+
+.booking-details__row .booking-details__row-item {
+	padding: 1em 0;
+}
+
+.booking-details__search-link {
+	padding: 0.6em 0;
+	margin-bottom: 1em;
+	.inline-block();
+	.font-size(12);
+}
+
+
+.booking-details__room-summary {
+	border: 1px solid #ddd;
+	border-left: none;
+	border-right: none;
+	padding: 2em 1em;
+	margin: 0 -1em 1em; 
+
+	.booking-details__row-item {
+		margin-bottom: 2em;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.room-booking-details {
+	.room-booking-details__room {
+		font-weight: bold;
+		margin-bottom: 0.2em;
+		.font-size(16);
+	}
+	.room-booking-details__guests {
+		margin-bottom: 0.6em;
+		.font-size(14);
+	}
+	.room-booking-details__rate {
+		margin-bottom: 0.4em;
+		font-weight: bold;
+		.font-size(14);
+	}
+	.room-booking-details__extras {
+		margin-bottom: 0.4em;
+		.font-size(14);
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		ul li {
+			margin: 0;
+			padding: 0.1em 0;
+			.font-size(14);
+		}
+	}
+}
+
+.total-cost {
+	display: table;
+	width: 100%;
+	padding: 0;
+	dt,dd {
+		display: table-cell;
+	}
+	dt {
+		.font-size(14);
+		vertical-align: bottom;
+	}
+	dd {
+		text-align: right;
+		vertical-align: bottom;
+		font-weight: bold;
+		.font-size(16);
+	}
+}
+
+.screen-569-up()  {
+	.booking-details__row--inline {
+		font-size: 0;
+		.clearfix();
+
+		.booking-details__row-item {
+			font-size: 10px;
+			width: 50%;
+			.box-sizing(border-box);
+			.inline-block(middle);
+
+			&:nth-child(1) {
+				padding: 0 0.5em 0 0;
+			}
+			&:nth-child(2) {
+				padding: 0 0 0 0.5em;
+			}
+		}
+
+		.booking-details__row-item.booking-details__row-item--block {
+			display: block;
+			width: auto;
+		}
+
+		.booking-details__row-item.booking-details__arrival-date {
+			width: auto;
+			float: left;
+		}
+		.booking-details__row-item.booking-details__location {
+			width: auto;
+			overflow: hidden;
+			display: block;
+		}
+	}
+
+	.booking-details-component {
+		.styled-select {
+			display: block;
+		}
+	}
+}

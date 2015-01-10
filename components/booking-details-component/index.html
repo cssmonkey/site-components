@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Booking details component</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script type="text/javascript">
+            var htmlTag = document.getElementsByTagName("html")[0];
+
+            htmlTag.className = htmlTag.className.replace(/(^|\s)no-js(?!\S)/, '$1js');
+
+        </script>
+
+        <link rel="stylesheet" href="/build/css/styles.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="page">
+                <h1 class="page-title">Booking details component</h1>
+                <hr />
+                <div class="booking-details-component">
+                    <div class="booking-details__inner">
+                        <h2 class="booking-details__title">Your booking</h2>
+                            <div class="booking-details__row booking-details__row--inline">
+                                <div class="booking-details__row-item booking-details__arrival-date">
+                                    <label class="label" for="bookingDetailsDatepicker">Arrival date</label> 
+
+                                    <div class="datepicker-container">
+                                        <input class="field field--datepicker" value="29/09/2015" placeholder="DD/MM/YYYY" type="text" name="bookingDetailsDatepicker" id="bookingDetailsDatepicker" /> 
+                                    </div>
+                                </div>
+                                <div class="booking-details__row-item booking-details__location">
+                                    <label class="label" for="bookingDetailsDatepicker">Location</label> 
+
+                                    <div class="styled-select">
+                                        <select class="field" name="dropdown1" id="dropdown1">
+                                            <option>Option one</option>
+                                            <option selected="selected">Option two</option>
+                                            <option>Option three</option>
+                                            <option>Option four</option>
+                                        </select>
+                                   </div>
+                                
+                                </div>
+                                <a href="#" class="booking-details__search-link">Search again</a>
+                            </div>
+                            <div class="booking-details__room-summary">
+                                <div class="booking-details__row">
+                                    <div class="booking-details__row-item">
+                                        <dl class="room-booking-details">
+                                            <dt class="room-booking-details__room">Room 1</dt>
+                                            <dd class="room-booking-details__guests">(2 Adult, 1 Child, 1 Infant)<dd>
+                                            <dd class="room-booking-details__rate">Standard Double</dd>
+                                            <dd class="room-booking-details__extras">
+                                                <ul>
+                                                    <li>Flowers package x 1</li>
+                                                    <li>Chippy chips package x 2</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+
+                                    </div>
+                                    <div class="booking-details__row-item">
+                                        <dl class="room-booking-details">
+                                            <dt class="room-booking-details__room">Room 2</dt>
+                                            <dd class="room-booking-details__guests">(7 Adults)<dd>
+                                            <dd class="room-booking-details__rate">Massive Double</dd>
+                                            <dd class="room-booking-details__extras">
+                                                <ul>
+                                                    <li>Party package x 1</li>
+                                                    <li>Amazing package x 3</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="booking-details__row">
+                                <div class="booking-details__row-item booking-details__row-item--total">
+                                    <dl class="total-cost">
+                                        <dt>Total:<dt>
+                                        <dd>&pound;120.00<dd>
+                                    </dl>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="/assets/js/libs/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="/assets/js/libs/jquery.hammer.js"></script>
+        <script type="text/javascript" src="/assets/js/libs/jquery.imagesLoaded.js"></script>
+        <script type="text/javascript" src="/assets/js/libs/jquery.smartresize.js"></script>
+        <script type="text/javascript" src="/assets/js/libs/outline.js"></script>
+        <script type="text/javascript" src="/assets/js/helpers/helpers.js"></script>
+        <script type="text/javascript" src="/assets/js/modules/bookingForm.js"></script>
+        <script type="text/javascript" src="/assets/js/modules/form.js"></script>
+        <script type="text/javascript" src="/assets/js/modules/jquery.stepper.js"></script>
+        <script type="text/javascript" src="/assets/js/modules/progressBar.js"></script>
+        <script type="text/javascript" src="/assets/js/modules/bookingDetailsComponent.js"></script>
+
+        <script type="text/javascript" src="/assets/js/app.js"></script>
+
+    </body>
+</html>

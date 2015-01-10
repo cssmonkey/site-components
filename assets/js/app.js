@@ -6,6 +6,7 @@ window.APP = (function (module, $) {
       module.form.init();
       module.bookingForm.init();
       module.progressBar.init();
+      module.bookingDetailsComponent.init();
       $('input[type="number"]').stepper({min : 1, max: 5});
     });
     
